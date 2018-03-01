@@ -36,6 +36,6 @@
 URxvt.intensityStyles:	false
 URxvt.background:       [94]#000000
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=8.7
+URxvt.font: 		xft:monospace:size=10.8
 URxvt.scrollBar:	false
 URxvt.cursorColor:	magenta
