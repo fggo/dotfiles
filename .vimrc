@@ -88,8 +88,8 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " vim-colors-solarized
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme DevC++ 
 
 
 " python with virtualenv support

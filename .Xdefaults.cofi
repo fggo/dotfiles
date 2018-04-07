@@ -1,0 +1,78 @@
+!==========
+! Urxvt
+!==========
+
+! mark-yank-urls bindings (see http://www.jukie.net/~bart/blog/urxvt-url-yank)
+!==========
+! Alt-u: Enter yank mode
+! Esc: Exit yank mode
+! y: copy to clipboard
+! Enter: Launch Browser
+! Ctrl-n: select next url
+! Ctrl-p: select previous url
+!==========
+
+URxvt.perl-lib:         /home/cofi/.urxvt/
+URxvt.perl-ext:         option-popup,matcher,selection,mark-yank-urls
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.underlineURLs:    true
+URxvt.keysym.M-u:       perl:mark-yank-urls:activate_mark_mode
+
+URxvt.cutchars:         `"()'*<>[]{|}"
+ 
+URxvt.geometry:         100x45
+URxvt.borderLess:       false
+URxvt.transparent:      false
+! URxvt.depth:            32
+URxvt.background:       rgba:0000/0000/0000/cccc
+URxvt.foreground:       white
+
+URxvt.saveLines:        10000
+URxvt.xftAntialias:     true
+URxvt.font:             xft:inconsolata:pixelsize=14:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=14:antialias=true,hinting=true
+URxvt.boldFont:         xft:inconsolata:pixelsize=14:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=14:antialias=true,hinting=true
+URxvt.italicFont:       xft:inconsolata:pixelsize=14:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=14:antialias=true,hinting=true
+URxvt.bolditalicFont:   xft:inconsolata:pixelsize=14:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=14:antialias=true,hinting=true
+
+URxvt.internalBorder:   0
+URxvt.underlineColor:	#999999
+URxvt.cursorBlink:      true
+URxvt.cursorColor:      magenta
+URxvt.cursorColor2:     #000000
+
+URxvt.scrollBar:        False
+URxvt.scrollBar_right:  False
+ 
+URxvt.scrollTtyOutput:  False
+URxvt.scrollWithBuffer: True
+URxvt.scrollTtyKeypress: True
+URxvt.urgentOnBell: True
+
+!black
+*color0:         #151515
+*color8:         #333333
+!red
+*color1:         #AE4747
+*color9:         #EE6363
+!green
+*color2:         #556B2F
+*color10:        #9ACD32
+!brown/yellow
+*color3:         #DAA520
+*color11:        #FFC125
+!blue
+*color4:         #7A7AB0
+*color12:        #4186BE
+!magenta
+*color5:         #8B7B8B
+*color13:        #D8BFD8
+!cyan
+*color6:         #A7A15E
+*color14:        #F0E68C
+!white
+*color7:         #DDDDDD
+*color15:        #FFFFFF
+
+Emacs.font:     inconsolata-10
+Emacs.geometry: 90x60
+Xft.hinting:    1
