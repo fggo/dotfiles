@@ -61,7 +61,7 @@ au BufNewFile,BufRead *.js,*.html,*.css,*yml
     \ set autoindent |
     \ set fileformat=unix |
 
-au BufNewFile,BufRead *.txt
+au BufNewFile,BufRead *.txt,*sh
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
@@ -84,6 +84,8 @@ set encoding=utf-8
 " Auto-complete
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:ycm_python_binary_path=$VIRTUAL_ENV.'/bin/python3.6'
 
 
 " vim-colors-solarized
