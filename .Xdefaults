@@ -1,5 +1,47 @@
-*background: #002b36
-*foreground: #839496
+!-------------------------------------------------------------------------------
+! URxvt settings
+!-------------------------------------------------------------------------------
+
+URxvt.depth:		32
+URxvt.loginShell:       true
+URxvt.saveLines:        50
+URxvt.internalBorder:   3
+URxvt.lineSpace:        0
+URxvt.intensityStyles:	false
+
+! Fonts
+URxvt.allow_bold:       false
+URxvt*font: 		xft:monospace:size=10
+URxvt*boldFont: 	xft:monospace:size=10
+
+! Fix font space
+!URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:      rxvt
+URxvt.scrollBar:        false
+
+! Perl extensions
+URxvt.perl-ext-common:  default,matcher
+URxvt.matcher.button:   1
+URxvt.url-Launcher:     firefox
+
+! Cursor
+URxvt.cursorBlink:      true
+URxvt.cursorColor:      magenta
+URxvt.cursorUnderline:  false
+
+! Pointer
+URxvt.pointerBlank:     true
+
+!!Source http://github.com/altercation/solarized
+
+*background: 		#002b36
+*foreground: 		#839496
+! *fading: 40
+*fadeColor: 		#000000
+*pointerColorBackground:#586e75
+*pointerColorForeground:#93a1a1
 
 !! black dark/light
 *color0: #073642
@@ -32,10 +74,3 @@
 !! white dark/light
 *color7: #eee8d5
 *color15: #fdf6e3
-
-URxvt.intensityStyles:	false
-URxvt.background:       [94]#000000
-URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=10
-URxvt.scrollBar:	false
-URxvt.cursorColor:	magenta
