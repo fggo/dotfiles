@@ -14,6 +14,9 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'scrooloose/nerdtree'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -42,6 +45,17 @@ nnoremap <space> za
 " docstrings for folded code
 let g:SimpylFold_docstring_preview=1
 
+" display line number
+set number
+
+" make code pretty
+let python_hightlight_all=1
+syntax on
+
+" NERDTree starts up in vim
+"autocmd vimenter * NERDTree
+
+map <C-n> : NERDTreeToggle<CR>
 
 " indentation (PEP8)
 au BufNewFile,BufRead *.py
@@ -90,8 +104,9 @@ let g:ycm_python_binary_path=$VIRTUAL_ENV.'/bin/python3.6'
 
 " vim-colors-solarized
 syntax enable
-"set background=dark
-colorscheme DevC++ 
+set background=dark
+"colorscheme DevC++ 
+colorscheme Tomorrow-Night-Blue
 
 
 " python with virtualenv support
