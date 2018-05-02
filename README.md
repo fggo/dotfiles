@@ -1,2 +1,9 @@
-# .Xdefaults for urxvt configuration
-# .vimrc for vim configuration
+# .Xdefaults
+rxvt-unicode configuration
+```commandline
+# read .Xdefaults resources and store in the server
+xrdb .Xdefaults
+```
+
+# .vimrc
+vim initialization

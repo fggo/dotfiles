@@ -101,13 +101,14 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let g:ycm_python_binary_path=$VIRTUAL_ENV.'/bin/python3.6'
 
+" html auto-complete
+autocmd FileType html set omnifunc=htmlcomplete#CompletTags
+
 
 " vim-colors-solarized
 syntax enable
-set background=dark
-"colorscheme DevC++ 
-colorscheme Tomorrow-Night-Blue
-
+"set background=dark
+colorscheme bayQua
 
 " python with virtualenv support
 py3 << EOF
